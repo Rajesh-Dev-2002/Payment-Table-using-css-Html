@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Wix+Madefor+Display:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family : 'Wix Madefor Display', sans-serif;
+
+        }
+
+       .Pricing-Container{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             gap: 2rem;
+
+       }
+       .Pricing-Plan{
+        flex:1;
+        max-width: 450px;
+        padding: 30px;
+        background-color: whitesmoke;
+        border-radius: 9px;
+        text-align: center;
+
+
+       }
+       .Pricing-Title{
+        font-size: 24;
+        font-weight: bold;
+        margin-bottom: 15px;
+       }
+
+       .Pricing-Rate{
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 15px;
+
+
+       }
+       .Plan-Features{
+         list-style: none;
+         margin: 0;
+         padding: 0;
+
+       }
+       .Plan-Features li{
+        margin-bottom: 0;
+       }
+       .Plan-Buttom{
+        background-color: #ff6600;
+        border-radius: 6px;
+        color: #ffff;
+        border: none;
+        padding: 10px;
+
+       }
+       @media(max-width){
+        .Pricing-Container{
+            flex-direction: column;
+            height: 100px;
+        }
+       }
+       
+
+
+    </style>
+</head>
+<body>
+    <div class=" Pricing-Container"> 
+        <div class="Pricing-Plan ">
+            <div class="Pricing-Title"> Basic</div>
+            <div class="Pricing-Rate">$ 11.99/month</div>
+            <ul class=" Plan-Features">
+                <li>✅&nbsp; 10GB &nbsp;Storage</li>
+                <li>✅ &nbsp;1 &nbsp;User </li>
+                <li>🚫 &nbsp;Support</li>
+                
+            </ul>
+            <button type="submit" class="Plan-Buttom"> Sign Up</button>
+        </div>
+        <div  class="Pricing-Plan">
+            <div class="Pricing-Title"> Standard</div>
+            <div class="Pricing-Rate ">$19.99/month </div>
+            <ul class="Plan-Features">
+                <li>✅&nbsp; 50GB&nbsp; Storage</li>
+                <li>✅ &nbsp;5&nbsp; Users</li>
+                <li>✅&nbsp; Phone&nbsp; & &nbsp; Email&nbsp; Support</li>
+            </ul>
+            <button type="submit" class="Plan-Buttom"> Sign Up</button>
+        </div>
+        <div class="Pricing-Plan">
+            <div class="Pricing-Title">Premium</div>
+            <div class="Pricing-Rate">$49.99/month</div>
+            <ul class="Plan-Features">
+                <li>✅&nbsp; $49.99/month </li>
+                <li>✅&nbsp;10 &nbsp; Users</li>
+            </ul>
+            <button type="submit" class="Plan-Buttom"> Sign Up</button>
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
